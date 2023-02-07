@@ -1,11 +1,25 @@
 <mjml>
     <mj-head>
+    <mj-font name="Open Sans" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700;800&display=swap" />
     <mj-attributes>
-        
+        <mj-class name="rounded-section" border-radius="8px" />
+        <mj-class name="white-bg" background-color="white" />
+        <mj-all font-family="Open Sans" />
     </mj-attributes>
         <mj-title>Canva | </mj-title>
     </mj-head>
-    <mj-body>
-        
+    <mj-body background-color="#EDF0F2">
+        <mj-wrapper background-color="transparent">
+            <mj-section mj-class="white-bg rounded-section">
+                <mj-column>
+                        <mj-image src="/images/logo.png" alt="Canva logo" width="100px" align="left"/>
+                </mj-column>
+                <mj-column>
+                    <mj-button align="right">
+                        Design with Canva
+                    </mj-button>
+                </mj-column>
+            </mj-section>
+        </mj-wrapper>
     </mj-body>
 </mjml>
