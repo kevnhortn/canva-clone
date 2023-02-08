@@ -44,6 +44,7 @@
 				font-weight="700"
 				color="#0E1318"
 				letter-spacing="-0.5px"
+				line-height="140%"
 			/>
 			<mj-class
 				name="p-txt"
@@ -65,12 +66,22 @@
 			<mj-class name="rounded-img" border-radius="4px" />
 		</mj-attributes>
 		<mj-style>
-			* { box-sizing: border-box !important; } @media (max-width: 600px) {
-			.social-group { width: 144px !important; } } @media (max-width: 500px) {
-			.white-btn { font-size: 10px !important; padding: 12px 10px !important; }
-			}
+			* { box-sizing: border-box !important; } @media (max-width: 400px) {
+			.logo-wrapper { align: center !important; width: 100% !important;} .logo {
+			width: 100% !important; align: center !important;} .btn-wrapper { display:
+			none !important; }} @media (max-width: 600px) { .social-group { width:
+			144px !important; } .num-col-1 { width: 14% !important; padding: 0
+			!important; vertical-align: top !important;} .num-col-2 { width: 80%
+			!important; padding-left: 10px !important;} .device-links-section {
+			display: none !important; } .section-padding { padding: 20px 10px
+			!important; } .inner-section-padding { padding: 0 10px !important; }}
 		</mj-style>
-		<mj-style inline="inline"> </mj-style>
+		<mj-style inline="inline">
+			.section-padding { padding: 40px 20px 0; } .inner-section-padding {
+			padding: 0 20px; }.footer-link-group { max-width: 400px !important; }
+			.device-links { max-width: 400px !important; } .logo-wrapper { width: 40%
+			!important;} .btn-wrapper { width: 60% !important; }
+		</mj-style>
 		<mj-title>Canva | Design a T-shirt Challenge</mj-title>
 	</mj-head>
 	<mj-body background-color="#EDF0F2">
@@ -79,25 +90,26 @@
 				<!-- 2-Column logo section -->
 			</mj-raw>
 			<mj-section
-				mj-class="white-bg section-padding"
+				mj-class="white-bg"
 				css-class="section-padding"
 				border-radius="8px 8px 0 0"
 				padding-bottom="0"
 			>
 				<mj-group>
-					<mj-column vertical-align="top">
+					<mj-column css-class="logo-wrapper" vertical-align="top" padding="0">
 						<mj-image
 							src="/images/logo.png"
+							css-class="logo"
 							alt="Canva logo"
 							width="100px"
 							align="left"
 							href="https://canva.com"
 						/>
 					</mj-column>
-					<mj-column vertical-align="top">
+					<mj-column css-class="btn-wrapper" vertical-align="top" padding="0">
 						<mj-button
 							mj-class="top-btn"
-							css-class="white-btn"
+							css-class="btn"
 							align="right"
 							target="_blank"
 							href="https://canva.com"
@@ -160,7 +172,9 @@
 			</mj-raw>
 			<mj-section
 				mj-class="white-bg"
-				padding="40px 20px 40px"
+				css-class="inner-section-padding"
+				padding-top="40px"
+				padding-bottom="40px"
 				border-radius="0 0 8px 8px"
 			>
 				<mj-column>
@@ -178,21 +192,28 @@
 				<!-- How to enter challenge section -->
 			</mj-raw>
 			<mj-section
-				mj-class="white-bg section-padding"
+				mj-class="white-bg"
+				css-class="section-padding"
 				border-radius="8px 8px 0 0"
-				padding-bottom="20px"
+				padding-bottom="10px"
 			>
 				<mj-column>
 					<mj-text mj-class="subheading"> How do I enter? </mj-text>
 				</mj-column>
 			</mj-section>
 			<mj-section
-				mj-class="section-padding white-bg"
+				mj-class="white-bg"
+				css-class="inner-section-padding"
 				padding-top="0"
-				padding-bottom="10px"
+				padding-bottom="20px"
 			>
 				<mj-group>
-					<mj-column width="80px" padding="0" vertical-align="middle">
+					<mj-column
+						css-class="num-col-1"
+						width="80px"
+						padding="0"
+						vertical-align="middle"
+					>
 						<mj-image
 							src="images/circle-num-1.png"
 							alt="Point 1 of how to enter the T-shirt challenge"
@@ -201,7 +222,12 @@
 							padding-right="0"
 						/>
 					</mj-column>
-					<mj-column width="460px" padding="0 10px 0 0" vertical-align="middle">
+					<mj-column
+						css-class="num-col-2"
+						width="460px"
+						padding="0 10px 0 0"
+						vertical-align="middle"
+					>
 						<mj-text mj-class="p-txt" padding="0">
 							Design your T-shirt with a Canva template or elements (make sure
 							to design something completely original)
@@ -210,21 +236,32 @@
 				</mj-group>
 			</mj-section>
 			<mj-section
-				mj-class="section-padding white-bg"
+				mj-class="white-bg"
+				css-class="inner-section-padding"
 				padding-top="0"
-				padding-bottom="10px"
+				padding-bottom="20px"
 			>
 				<mj-group>
-					<mj-column width="80px" padding="0" vertical-align="middle">
+					<mj-column
+						css-class="num-col-1"
+						width="80px"
+						padding="0"
+						vertical-align="middle"
+					>
 						<mj-image
 							src="images/circle-num-2.png"
-							alt="Point 1 of how to enter the T-shirt challenge"
+							alt="Point 2 of how to enter the T-shirt challenge"
 							width="41px"
 							align="left"
 							padding-right="0"
 						/>
 					</mj-column>
-					<mj-column width="460px" padding="0 10px 0 0" vertical-align="middle">
+					<mj-column
+						css-class="num-col-2"
+						width="460px"
+						padding="0 10px 0 0"
+						vertical-align="middle"
+					>
 						<mj-text mj-class="p-txt" padding="0">
 							Share it on Instagram or Twitter and tag
 							<strong>#CanvaDesignChallenge</strong> (we can only view public
@@ -234,28 +271,43 @@
 				</mj-group>
 			</mj-section>
 			<mj-section
-				mj-class="section-padding white-bg"
+				mj-class="white-bg"
+				css-class="inner-section-padding"
 				padding-top="0"
 				padding-bottom="10px"
 			>
 				<mj-group>
-					<mj-column width="80px" padding="0" vertical-align="middle">
+					<mj-column
+						css-class="num-col-1"
+						width="80px"
+						padding="0"
+						vertical-align="middle"
+					>
 						<mj-image
 							src="images/circle-num-3.png"
-							alt="Point 1 of how to enter the T-shirt challenge"
+							alt="Point 3 of how to enter the T-shirt challenge"
 							width="41px"
 							align="left"
 							padding-right="0"
 						/>
 					</mj-column>
-					<mj-column width="460px" padding="0 10px 0 0" vertical-align="middle">
+					<mj-column
+						css-class="num-col-2"
+						width="460px"
+						padding="0 10px 0 0"
+						vertical-align="middle"
+					>
 						<mj-text mj-class="p-txt" padding="0">
 							We'll showcase our favorite designs to the Canva community
 						</mj-text>
 					</mj-column>
 				</mj-group>
 			</mj-section>
-			<mj-section mj-class="white-bg" padding="0 20px 20px">
+			<mj-section
+				mj-class="white-bg"
+				css-class="inner-section-padding"
+				padding-top="0"
+			>
 				<mj-column>
 					<mj-button
 						mj-class="purple-btn"
@@ -268,7 +320,8 @@
 				</mj-column>
 			</mj-section>
 			<mj-section
-				mj-class="white-bg section-padding"
+				mj-class="white-bg"
+				css-class="inner-section-padding"
 				padding-top="0"
 				padding-bottom="50px"
 				border-radius="0 0 8px 8px"
@@ -291,7 +344,8 @@
 				<!-- Design inspiration section -->
 			</mj-raw>
 			<mj-section
-				mj-class="white-bg section-padding"
+				mj-class="white-bg"
+				css-class="section-padding"
 				border-radius="8px 8px 0 0"
 				padding-bottom="0"
 			>
@@ -301,7 +355,11 @@
 					</mj-text>
 				</mj-column>
 			</mj-section>
-			<mj-section mj-class="white-bg" padding="0 20px 10px">
+			<mj-section
+				mj-class="white-bg"
+				css-class="inner-section-padding"
+				padding-top="0"
+			>
 				<mj-column>
 					<mj-text mj-class="p-txt" align="left">
 						We loved seeing your magenta designs in our last Canva Design
@@ -313,7 +371,8 @@
 				<!-- 2-Column design layout -->
 			</mj-raw>
 			<mj-section
-				mj-class="white-bg section-padding"
+				mj-class="white-bg"
+				css-class="inner-section-padding"
 				padding-top="0"
 				padding-bottom="10px"
 			>
@@ -340,7 +399,7 @@
 						<mj-image
 							mj-class="rounded-img"
 							src="/images/r1c2.png"
-							alt="Artwork designed by Mya"
+							alt="Artwork designed by Camila"
 							href="https://canva.com"
 							width="600px"
 							padding-left="10px"
@@ -358,7 +417,8 @@
 				</mj-group>
 			</mj-section>
 			<mj-section
-				mj-class="white-bg section-padding"
+				mj-class="white-bg"
+				css-class="inner-section-padding"
 				padding-top="0"
 				padding-bottom="10px"
 			>
@@ -367,7 +427,7 @@
 						<mj-image
 							mj-class="rounded-img"
 							src="/images/r2c1.png"
-							alt="Artwork designed by Mya"
+							alt="Artwork designed by Ahlam"
 							href="https://canva.com"
 							width="600px"
 							padding-right="10px"
@@ -385,7 +445,7 @@
 						<mj-image
 							mj-class="rounded-img"
 							src="/images/r2c2.png"
-							alt="Artwork designed by Mya"
+							alt="Artwork designed by Muhammad Ali"
 							href="https://canva.com"
 							width="600px"
 							padding-left="10px"
@@ -403,7 +463,8 @@
 				</mj-group>
 			</mj-section>
 			<mj-section
-				mj-class="white-bg section-padding"
+				mj-class="white-bg"
+				css-class="inner-section-padding"
 				padding-top="0"
 				padding-bottom="10px"
 			>
@@ -412,7 +473,7 @@
 						<mj-image
 							mj-class="rounded-img"
 							src="/images/r3c1.png"
-							alt="Artwork designed by Mya"
+							alt="Artwork designed by Akshayaa"
 							href="https://canva.com"
 							width="600px"
 							padding-right="10px"
@@ -430,7 +491,7 @@
 						<mj-image
 							mj-class="rounded-img"
 							src="/images/r3c2.png"
-							alt="Artwork designed by Mya"
+							alt="Artwork designed by Adreiciele"
 							href="https://canva.com"
 							width="600px"
 							padding-left="10px"
@@ -448,7 +509,8 @@
 				</mj-group>
 			</mj-section>
 			<mj-section
-				mj-class="white-bg section-padding"
+				mj-class="white-bg"
+				css-class="inner-section-padding"
 				padding-top="0"
 				padding-bottom="10px"
 			>
@@ -457,7 +519,7 @@
 						<mj-image
 							mj-class="rounded-img"
 							src="/images/r4c1.png"
-							alt="Artwork designed by Mya"
+							alt="Artwork designed by Purvi"
 							href="https://canva.com"
 							width="600px"
 							padding-right="10px"
@@ -475,7 +537,7 @@
 						<mj-image
 							mj-class="rounded-img"
 							src="/images/r4c2.png"
-							alt="Artwork designed by Mya"
+							alt="Artwork designed by Queila"
 							href="https://canva.com"
 							width="600px"
 							padding-left="10px"
@@ -493,7 +555,8 @@
 				</mj-group>
 			</mj-section>
 			<mj-section
-				mj-class="white-bg section-padding"
+				mj-class="white-bg"
+				css-class="inner-section-padding"
 				padding-top="10px"
 				padding-bottom="10px"
 			>
@@ -507,7 +570,9 @@
 			</mj-section>
 			<mj-section
 				mj-class="white-bg"
-				padding="0 20px 50px"
+				css-class="inner-section-padding"
+				padding-top="0"
+				padding-bottom="40px"
 				border-radius="0 0 8px 8px"
 			>
 				<mj-column>
@@ -536,98 +601,103 @@
 					</mj-text>
 				</mj-column>
 			</mj-section>
-			<mj-section border-bottom="1px solid #DDE1E3">
-				<mj-column width="100px">
-					<mj-text
-						mj-class="p-txt"
-						align="center"
-						padding="10px 0"
-						color="#515559"
-					>
-						Get Canva for:
-					</mj-text>
-				</mj-column>
-				<mj-column width="10px"></mj-column>
-				<mj-column width="50px">
-					<mj-text
-						mj-class="p-txt"
-						align="center"
-						padding="10px 0"
-						color="#515559"
-					>
-						<a
-							class="link"
-							href="https://canva.com"
-							target="_blank"
-							style="color: #515559"
-							>iPhone</a
+			<mj-section
+				css-class="device-links-section"
+				border-bottom="1px solid #DDE1E3"
+			>
+				<mj-group css-class="device-links">
+					<mj-column width="100px" padding="0">
+						<mj-text
+							mj-class="p-txt"
+							align="center"
+							padding="10px 0"
+							color="#515559"
 						>
-					</mj-text>
-				</mj-column>
-				<mj-column width="50px">
-					<mj-text
-						mj-class="p-txt"
-						align="center"
-						padding="10px 0"
-						color="#515559"
-					>
-						<a
-							class="link"
-							href="https://canva.com"
-							target="_blank"
-							style="color: #515559"
-							>iPad</a
+							Get Canva for:
+						</mj-text>
+					</mj-column>
+					<mj-column width="10px"></mj-column>
+					<mj-column width="50px">
+						<mj-text
+							mj-class="p-txt"
+							align="center"
+							padding="10px 0"
+							color="#515559"
 						>
-					</mj-text>
-				</mj-column>
-				<mj-column width="60px">
-					<mj-text
-						mj-class="p-txt"
-						align="center"
-						padding="10px 0"
-						color="#515559"
-					>
-						<a
-							class="link"
-							href="https://canva.com"
-							target="_blank"
-							style="color: #515559"
-							>Android</a
+							<a
+								class="link"
+								href="https://canva.com"
+								target="_blank"
+								style="color: #515559"
+								>iPhone</a
+							>
+						</mj-text>
+					</mj-column>
+					<mj-column width="50px">
+						<mj-text
+							mj-class="p-txt"
+							align="center"
+							padding="10px 0"
+							color="#515559"
 						>
-					</mj-text>
-				</mj-column>
-				<mj-column width="50px">
-					<mj-text
-						mj-class="p-txt"
-						align="center"
-						padding="10px 0"
-						color="#515559"
-					>
-						<a
-							class="link"
-							href="https://canva.com"
-							target="_blank"
-							style="color: #515559"
-							>Mac</a
+							<a
+								class="link"
+								href="https://canva.com"
+								target="_blank"
+								style="color: #515559"
+								>iPad</a
+							>
+						</mj-text>
+					</mj-column>
+					<mj-column width="60px">
+						<mj-text
+							mj-class="p-txt"
+							align="center"
+							padding="10px 0"
+							color="#515559"
 						>
-					</mj-text>
-				</mj-column>
-				<mj-column width="60px">
-					<mj-text
-						mj-class="p-txt"
-						align="center"
-						padding="10px 0"
-						color="#515559"
-					>
-						<a
-							class="link"
-							href="https://canva.com"
-							target="_blank"
-							style="color: #515559"
-							>Windows</a
+							<a
+								class="link"
+								href="https://canva.com"
+								target="_blank"
+								style="color: #515559"
+								>Android</a
+							>
+						</mj-text>
+					</mj-column>
+					<mj-column width="50px">
+						<mj-text
+							mj-class="p-txt"
+							align="center"
+							padding="10px 0"
+							color="#515559"
 						>
-					</mj-text>
-				</mj-column>
+							<a
+								class="link"
+								href="https://canva.com"
+								target="_blank"
+								style="color: #515559"
+								>Mac</a
+							>
+						</mj-text>
+					</mj-column>
+					<mj-column width="60px">
+						<mj-text
+							mj-class="p-txt"
+							align="center"
+							padding="10px 0"
+							color="#515559"
+						>
+							<a
+								class="link"
+								href="https://canva.com"
+								target="_blank"
+								style="color: #515559"
+								>Windows</a
+							>
+						</mj-text>
+					</mj-column>
+				</mj-group>
 			</mj-section>
 			<mj-section>
 				<mj-column padding="0 20px">
@@ -654,8 +724,8 @@
 				</mj-column>
 			</mj-section>
 			<mj-section padding="0 0">
-				<mj-group>
-					<mj-column width="300px" padding="0">
+				<mj-group css-class="footer-link-group">
+					<mj-column padding="0">
 						<mj-text align="right" padding="0 8px">
 							<a
 								class="link"
@@ -666,7 +736,7 @@
 							>
 						</mj-text>
 					</mj-column>
-					<mj-column width="300px" padding="0">
+					<mj-column padding="0">
 						<mj-text align="left" padding="0 8px">
 							<a
 								class="link"
