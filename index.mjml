@@ -1,25 +1,95 @@
 <mjml>
-    <mj-head>
+  <mj-head>
     <mj-font name="Open Sans" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700;800&display=swap" />
     <mj-attributes>
-        <mj-class name="rounded-section" border-radius="8px" />
-        <mj-class name="white-bg" background-color="white" />
-        <mj-all font-family="Open Sans" />
+      <mj-class name="rounded-section" border-radius="8px" />
+      <mj-class name="white-bg" background-color="white" />
+      <mj-all font-family="Open Sans" />
+      <mj-class name="top-btn" background-color="transparent" color="#565A5D" border="2px solid #E8E9E9" inner-padding="14px 20px" font-weight="600" font-size="14px" border-radius="4px" />
+      <mj-class name="purple-btn" background-color="7D2AE8" color="white" border="none" inner-padding="14px 20px" font-weight="600" font-size="14px" border-radius="4px" />
+      <mj-class name="section-padding" padding="40px 20px" />
+      <mj-class name="heading-1" font-size="32px" font-weight="700" color="#0E1318" letter-spacing="-1px" />
+      <mj-class name="subheading" font-size="24px" font-weight="700" color="#0E1318" letter-spacing="-1px" />
+      <mj-class name="p-txt" font-size="14px" font-weight="400" color="#0E1318" line-height="160%" />
+      <mj-class name="full-img" width="100%" padding="0" />
+      <mj-class name="underline" text-decoration="underline"/>
+      <mj-class name="num-circle" background-color="#EDF0F2" color="#293039" inner-padding="20px" font-size="14px" font-weight="500"/>
+      <mj-style inline="inline">
+        body {
+        box-sizing: border-box !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        }
+        mj-link:hover {
+            cursor: pointer !important;
+        }
+      </mj-style>
     </mj-attributes>
-        <mj-title>Canva | </mj-title>
-    </mj-head>
-    <mj-body background-color="#EDF0F2">
-        <mj-wrapper background-color="transparent">
-            <mj-section mj-class="white-bg rounded-section">
-                <mj-column>
-                        <mj-image src="/images/logo.png" alt="Canva logo" width="100px" align="left"/>
-                </mj-column>
-                <mj-column>
-                    <mj-button align="right">
-                        Design with Canva
-                    </mj-button>
-                </mj-column>
-            </mj-section>
-        </mj-wrapper>
-    </mj-body>
+    <mj-title>Canva | </mj-title>
+  </mj-head>
+  <mj-body background-color="#EDF0F2">
+    <mj-wrapper background-color="transparent">
+      <mj-section mj-class="white-bg section-padding" border-radius="8px 8px 0 0" padding-bottom="0">
+        <mj-column vertical-align="top">
+          <mj-image src="/images/logo.png" alt="Canva logo" width="100px" align="left" />
+        </mj-column>
+        <mj-column vertical-align="top">
+          <mj-button mj-class="top-btn" align="right" target="_blank" href="https://canva.com">
+            Design with Canva
+          </mj-button>
+        </mj-column>
+      </mj-section>
+      <mj-section mj-class="white-bg" padding="40px 20px 10px">
+        <mj-column>
+          <mj-text mj-class="heading-1" align="center">
+            Your Challenge: Design a T-shirt
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section mj-class="white-bg" padding="0 20px 0">
+        <mj-column>
+          <mj-text mj-class="p-txt" align="center">
+            We all have T-shirts that show how much we love certain bands, TV shows, sports teams, or hobbies. For this week's <strong>#CanvaDesignChallenge</strong>, use your imagination to create a unique T-shirt that's never been seen before. Go wild with colors, images, text, graphics, and patterns, then share your design with us. Our favorites will win a Canva prize pack. You can even opt to get your design printed on a T-shirt and delivered to your doorstep.
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section mj-class="white-bg" padding="10px 20px 20px">
+        <mj-column>
+          <mj-button mj-class="purple-btn" target="_blank" href="https://canva.com">
+            Design your T-shirt
+          </mj-button>
+        </mj-column>
+      </mj-section>
+      <mj-section mj-class="white-bg" padding="20px 0 0px">
+        <mj-column width="600px">
+          <mj-image mj-class="full-img" src="/images/t-shirt.png" alt="Canva T-shirt Challenge" width="600px" border href="https://canva.com" target="_blank" />
+        </mj-column>
+      </mj-section>
+      <mj-section mj-class="white-bg" padding="40px 20px 40px" border-radius="0 0 8px 8px">
+        <mj-column>
+          <mj-text mj-class="p-txt underline" font-weight="500" color="#0E1318">
+            <mj-link href="https://canva.com" target="_blank" >* Challenge Terms & Conditions</mj-link>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section mj-class="transparent" padding-top="10px">
+        <mj-column>
+        </mj-column>
+      </mj-section>
+      <mj-section mj-class="white-bg section-padding" border-radius="8px 8px 0 0" padding-bottom="20px">
+        <mj-column>
+            <mj-text mj-class="subheading">
+                How do I enter?
+            </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section mj-class="section-padding white-bg" padding-top="0">
+        <mj-column>
+            <mj-text>
+                1
+            </mj-text>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+  </mj-body>
 </mjml>
