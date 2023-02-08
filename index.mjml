@@ -6,10 +6,6 @@
 		/>
 		<mj-attributes>
 			<mj-breakpoint width="600px" />
-			<mj-style inline="inline">
-				body { box-sizing: border-box !important; padding: 0 !important; margin:
-				0 !important; }
-			</mj-style>
 			<mj-class name="rounded-section" border-radius="8px" />
 			<mj-class name="white-bg" background-color="white" />
 			<mj-all font-family="Open Sans, sans-serif" />
@@ -68,10 +64,15 @@
 			/>
 			<mj-class name="rounded-img" border-radius="4px" />
 		</mj-attributes>
+		<mj-style> * { box-sizing: border-box !important; } </mj-style>
+		<mj-style inline="inline"> </mj-style>
 		<mj-title>Canva</mj-title>
 	</mj-head>
 	<mj-body background-color="#EDF0F2">
 		<mj-wrapper background-color="transparent">
+			<mj-raw>
+				<!-- 2-Column logo section -->
+			</mj-raw>
 			<mj-section
 				mj-class="white-bg section-padding"
 				border-radius="8px 8px 0 0"
@@ -99,6 +100,9 @@
 					</mj-column>
 				</mj-group>
 			</mj-section>
+			<mj-raw>
+				<!-- Header section -->
+			</mj-raw>
 			<mj-section mj-class="white-bg" padding="40px 20px 10px">
 				<mj-column>
 					<mj-text mj-class="heading-1" align="center">
@@ -144,6 +148,9 @@
 					/>
 				</mj-column>
 			</mj-section>
+			<mj-raw>
+				<!-- Challenge Terms and Conditions -->
+			</mj-raw>
 			<mj-section
 				mj-class="white-bg"
 				padding="40px 20px 40px"
@@ -160,6 +167,9 @@
 			<mj-section mj-class="transparent" padding-top="10px">
 				<mj-column> </mj-column>
 			</mj-section>
+			<mj-raw>
+				<!-- How to enter challenge section -->
+			</mj-raw>
 			<mj-section
 				mj-class="white-bg section-padding"
 				border-radius="8px 8px 0 0"
@@ -257,12 +267,16 @@
 						alt="Screen capture of the T-shirt challenge on Canva.com"
 						width="600px"
 						align="center"
+						border-radius="4px"
 					/>
 				</mj-column>
 			</mj-section>
 			<mj-section mj-class="transparent" padding-top="10px">
 				<mj-column> </mj-column>
 			</mj-section>
+			<mj-raw>
+				<!-- Design inspiration section -->
+			</mj-raw>
 			<mj-section
 				mj-class="white-bg section-padding"
 				border-radius="8px 8px 0 0"
@@ -282,7 +296,9 @@
 					</mj-text>
 				</mj-column>
 			</mj-section>
-
+			<mj-raw>
+				<!-- 2-Column design layout -->
+			</mj-raw>
 			<mj-section
 				mj-class="white-bg section-padding"
 				padding-top="0"
@@ -296,6 +312,7 @@
 							alt="Artwork designed by Mya"
 							href="https://canva.com"
 							width="600px"
+							padding-right="10px"
 						/>
 						<mj-text
 							mj-class="p-txt"
@@ -313,12 +330,14 @@
 							alt="Artwork designed by Mya"
 							href="https://canva.com"
 							width="600px"
+							padding-left="10px"
 						/>
 						<mj-text
 							mj-class="p-txt"
 							font-size="12px"
 							text-transform="uppercase"
 							font-weight="600"
+							padding-left="10px"
 						>
 							Designed by Camila
 						</mj-text>
@@ -338,6 +357,7 @@
 							alt="Artwork designed by Mya"
 							href="https://canva.com"
 							width="600px"
+							padding-right="10px"
 						/>
 						<mj-text
 							mj-class="p-txt"
@@ -355,12 +375,14 @@
 							alt="Artwork designed by Mya"
 							href="https://canva.com"
 							width="600px"
+							padding-left="10px"
 						/>
 						<mj-text
 							mj-class="p-txt"
 							font-size="12px"
 							text-transform="uppercase"
 							font-weight="600"
+							padding-left="10px"
 						>
 							Designed by Muhammad Ali
 						</mj-text>
@@ -380,6 +402,7 @@
 							alt="Artwork designed by Mya"
 							href="https://canva.com"
 							width="600px"
+							padding-right="10px"
 						/>
 						<mj-text
 							mj-class="p-txt"
@@ -397,12 +420,14 @@
 							alt="Artwork designed by Mya"
 							href="https://canva.com"
 							width="600px"
+							padding-left="10px"
 						/>
 						<mj-text
 							mj-class="p-txt"
 							font-size="12px"
 							text-transform="uppercase"
 							font-weight="600"
+							padding-left="10px"
 						>
 							Designed by Adreiciele
 						</mj-text>
@@ -422,6 +447,7 @@
 							alt="Artwork designed by Mya"
 							href="https://canva.com"
 							width="600px"
+							padding-right="10px"
 						/>
 						<mj-text
 							mj-class="p-txt"
@@ -439,12 +465,14 @@
 							alt="Artwork designed by Mya"
 							href="https://canva.com"
 							width="600px"
+							padding-left="10px"
 						/>
 						<mj-text
 							mj-class="p-txt"
 							font-size="12px"
 							text-transform="uppercase"
 							font-weight="600"
+							padding-left="10px"
 						>
 							Designed by Queila
 						</mj-text>
@@ -480,71 +508,109 @@
 					</mj-button>
 				</mj-column>
 			</mj-section>
+			<mj-raw>
+				<!-- Footer section -->
+			</mj-raw>
 			<mj-section border-bottom="1px solid #DDE1E3">
 				<mj-column padding="0 20px">
-					<mj-text mj-class="p-txt" align="center" padding-top="20px">
+					<mj-text
+						mj-class="p-txt"
+						align="center"
+						padding-top="20px"
+						color="#515559"
+					>
 						You are receiving this email because you signed up to Canva.
 					</mj-text>
 				</mj-column>
 			</mj-section>
 			<mj-section border-bottom="1px solid #DDE1E3">
 				<mj-column width="100px">
-					<mj-text mj-class="p-txt" align="center" padding="10px 0">
+					<mj-text
+						mj-class="p-txt"
+						align="center"
+						padding="10px 0"
+						color="#515559"
+					>
 						Get Canva for:
 					</mj-text>
 				</mj-column>
 				<mj-column width="10px"></mj-column>
 				<mj-column width="50px">
-					<mj-text mj-class="p-txt" align="center" padding="10px 0">
+					<mj-text
+						mj-class="p-txt"
+						align="center"
+						padding="10px 0"
+						color="#515559"
+					>
 						<a
 							class="link"
 							href="https://canva.com"
 							target="_blank"
-							style="color: #0e1318"
+							style="color: #515559"
 							>iPhone</a
 						>
 					</mj-text>
 				</mj-column>
 				<mj-column width="50px">
-					<mj-text mj-class="p-txt" align="center" padding="10px 0">
+					<mj-text
+						mj-class="p-txt"
+						align="center"
+						padding="10px 0"
+						color="#515559"
+					>
 						<a
 							class="link"
 							href="https://canva.com"
 							target="_blank"
-							style="color: #0e1318"
+							style="color: #515559"
 							>iPad</a
 						>
 					</mj-text>
 				</mj-column>
 				<mj-column width="60px">
-					<mj-text mj-class="p-txt" align="center" padding="10px 0">
+					<mj-text
+						mj-class="p-txt"
+						align="center"
+						padding="10px 0"
+						color="#515559"
+					>
 						<a
 							class="link"
 							href="https://canva.com"
 							target="_blank"
-							style="color: #0e1318"
+							style="color: #515559"
 							>Android</a
 						>
 					</mj-text>
 				</mj-column>
 				<mj-column width="50px">
-					<mj-text mj-class="p-txt" align="center" padding="10px 0">
+					<mj-text
+						mj-class="p-txt"
+						align="center"
+						padding="10px 0"
+						color="#515559"
+					>
 						<a
 							class="link"
 							href="https://canva.com"
 							target="_blank"
-							style="color: #0e1318"
+							style="color: #515559"
 							>Mac</a
 						>
 					</mj-text>
 				</mj-column>
 				<mj-column width="60px">
-					<mj-text mj-class="p-txt" align="center" padding="10px 0">
+					<mj-text
+						mj-class="p-txt"
+						align="center"
+						padding="10px 0"
+						color="#515559"
+					>
 						<a
 							class="link"
 							href="https://canva.com"
 							target="_blank"
-							style="color: #0e1318"
+							style="color: #515559"
 							>Windows</a
 						>
 					</mj-text>
@@ -552,7 +618,12 @@
 			</mj-section>
 			<mj-section>
 				<mj-column padding="0 20px">
-					<mj-text mj-class="p-txt" align="center" padding="10px 20px 0px">
+					<mj-text
+						mj-class="p-txt"
+						align="center"
+						padding="10px 20px 0px"
+						color="#515559"
+					>
 						This advertisement is made for you with
 						<span style="padding: 0 2px"></span>
 						<img src="/images/heart.png" alt="Purple love heart" width="15px" />
@@ -563,35 +634,37 @@
 							class="link"
 							href="https://canva.com"
 							target="_blank"
-							style="color: #0e1318"
+							style="color: #515559"
 							>Help Center</a
 						>.
 					</mj-text>
 				</mj-column>
 			</mj-section>
-			<mj-section padding="0">
-				<mj-column width="150px">
-					<mj-text align="center">
-						<a
-							class="link"
-							href="https://canva.com"
-							target="_blank"
-							style="color: #0e1318"
-							>Visit canva.com</a
-						>
-					</mj-text>
-				</mj-column>
-				<mj-column width="150px">
-					<mj-text align="center">
-						<a
-							class="link"
-							href="https://canva.com"
-							target="_blank"
-							style="color: #0e1318"
-							>Unsubscribe</a
-						>
-					</mj-text>
-				</mj-column>
+			<mj-section padding="0 0">
+				<mj-group>
+					<mj-column width="300px" padding="0">
+						<mj-text align="right" padding="0 8px">
+							<a
+								class="link"
+								href="https://canva.com"
+								target="_blank"
+								style="color: #515559; padding: 0"
+								>Visit canva.com</a
+							>
+						</mj-text>
+					</mj-column>
+					<mj-column width="300px" padding="0">
+						<mj-text align="left" padding="0 8px">
+							<a
+								class="link"
+								href="https://canva.com"
+								target="_blank"
+								style="color: #515559; padding: 0"
+								>Unsubscribe</a
+							>
+						</mj-text>
+					</mj-column>
+				</mj-group>
 			</mj-section>
 			<mj-section padding="0">
 				<mj-column>
@@ -600,45 +673,55 @@
 							class="link"
 							href="https://canva.com"
 							target="_blank"
-							style="color: #0e1318"
+							style="color: #515559"
 							>Manage Email Preferences</a
 						>
 					</mj-text>
 				</mj-column>
 			</mj-section>
-			<mj-section padding="0 40px 40px">
-				<mj-column width="80px">
-					<mj-image
-						src="images/fb.png"
-						alt="Facebook icon"
-						width="24px"
-						href="https://canva.com"
-					/>
-				</mj-column>
-				<mj-column width="80px">
-					<mj-image
-						src="images/twitter.png"
-						alt="Facebook icon"
-						width="24px"
-						href="https://canva.com"
-					/>
-				</mj-column>
-				<mj-column width="80px">
-					<mj-image
-						src="images/pinterest.png"
-						alt="Facebook icon"
-						width="24px"
-						href="https://canva.com"
-					/>
-				</mj-column>
-				<mj-column width="80px">
-					<mj-image
-						src="images/ig.png"
-						alt="Facebook icon"
-						width="24px"
-						href="https://canva.com"
-					/>
-				</mj-column>
+			<mj-section padding="10px 40px 40px">
+				<mj-group width="144px">
+					<mj-column>
+						<mj-image
+							src="images/fb.png"
+							alt="Facebook icon"
+							width="24px"
+							href="https://canva.com"
+							align="center"
+							padding="0 4px"
+						/>
+					</mj-column>
+					<mj-column>
+						<mj-image
+							src="images/twitter.png"
+							alt="Facebook icon"
+							width="24px"
+							href="https://canva.com"
+							align="center"
+							padding="0 4px"
+						/>
+					</mj-column>
+					<mj-column>
+						<mj-image
+							src="images/pinterest.png"
+							alt="Facebook icon"
+							width="24px"
+							href="https://canva.com"
+							align="center"
+							padding="0 4px"
+						/>
+					</mj-column>
+					<mj-column>
+						<mj-image
+							src="images/ig.png"
+							alt="Facebook icon"
+							width="24px"
+							href="https://canva.com"
+							align="center"
+							padding="0 4px"
+						/>
+					</mj-column>
+				</mj-group>
 			</mj-section>
 		</mj-wrapper>
 	</mj-body>
