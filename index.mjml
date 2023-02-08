@@ -148,8 +148,8 @@
 			>
 				<mj-column>
 					<mj-text mj-class="p-txt underline" font-weight="500" color="#0E1318">
-						<mj-link href="https://canva.com" target="_blank"
-							>* Challenge Terms & Conditions</mj-link
+						<a href="https://canva.com" target="_blank" style="color: #0e1318"
+							>* Challenge Terms &amp; Conditions</a
 						>
 					</mj-text>
 				</mj-column>
@@ -596,20 +596,36 @@
 			</mj-section>
 			<mj-section padding="0 40px 40px">
 				<mj-column width="80px">
-					<mj-image src="images/fb.png" alt="Facebook icon" width="24px" />
+					<mj-image
+						src="images/fb.png"
+						alt="Facebook icon"
+						width="24px"
+						href="https://canva.com"
+					/>
 				</mj-column>
 				<mj-column width="80px">
-					<mj-image src="images/twitter.png" alt="Facebook icon" width="24px" />
+					<mj-image
+						src="images/twitter.png"
+						alt="Facebook icon"
+						width="24px"
+						href="https://canva.com"
+					/>
 				</mj-column>
 				<mj-column width="80px">
 					<mj-image
 						src="images/pinterest.png"
 						alt="Facebook icon"
 						width="24px"
+						href="https://canva.com"
 					/>
 				</mj-column>
 				<mj-column width="80px">
-					<mj-image src="images/ig.png" alt="Facebook icon" width="24px" />
+					<mj-image
+						src="images/ig.png"
+						alt="Facebook icon"
+						width="24px"
+						href="https://canva.com"
+					/>
 				</mj-column>
 			</mj-section>
 		</mj-wrapper>
