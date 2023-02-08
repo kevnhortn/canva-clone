@@ -9,20 +9,17 @@
       <mj-class name="purple-btn" background-color="7D2AE8" color="white" border="none" inner-padding="14px 20px" font-weight="600" font-size="14px" border-radius="4px" />
       <mj-class name="section-padding" padding="40px 20px" />
       <mj-class name="heading-1" font-size="32px" font-weight="700" color="#0E1318" letter-spacing="-1px" />
-      <mj-class name="subheading" font-size="24px" font-weight="700" color="#0E1318" letter-spacing="-1px" />
+      <mj-class name="subheading" font-size="24px" font-weight="700" color="#0E1318" letter-spacing="-0.5px" />
       <mj-class name="p-txt" font-size="14px" font-weight="400" color="#0E1318" line-height="160%" />
       <mj-class name="full-img" width="100%" padding="0" />
       <mj-class name="underline" text-decoration="underline" />
       <mj-class name="num-circle" background-color="#EDF0F2" color="#293039" inner-padding="20px" font-size="14px" font-weight="500" />
+      <mj-class name="rounded-img" border-radius="4px" />
       <mj-style inline="inline">
         body {
           box-sizing: border-box !important;
           padding: 0 !important;
           margin: 0 !important;
-        }
-
-        mj-link:hover {
-          cursor: pointer !important;
         }
       </mj-style>
     </mj-attributes>
@@ -123,7 +120,95 @@
       </mj-section>
       <mj-section mj-class="white-bg section-padding" padding-top="0" padding-bottom="50px" border-radius="0 0 8px 8px">
         <mj-column width="100%">
-            <mj-image src="/images/challenge-capture.png" href="https://canva.com" alt="Screen capture of the T-shirt challenge on Canva.com" width="600px" align="center"/>
+          <mj-image src="/images/challenge-capture.png" href="https://canva.com" alt="Screen capture of the T-shirt challenge on Canva.com" width="600px" align="center" />
+        </mj-column>
+      </mj-section>
+      <mj-section mj-class="transparent" padding-top="10px">
+        <mj-column>
+        </mj-column>
+      </mj-section>
+      <mj-section mj-class="white-bg section-padding" border-radius="8px 8px 0 0" padding-bottom="0">
+        <mj-column>
+          <mj-text mj-class="subheading">
+            Canva community design inspiration
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section mj-class="white-bg" padding="0 20px 10px">
+        <mj-column>
+          <mj-text mj-class="p-txt" align="left">
+            We loved seeing your magenta designs in our last Canva Design Challenge. Check out some of our favorites:
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section mj-class="white-bg section-padding" padding-top="0" padding-bottom="10px">
+        <mj-column>
+          <mj-image mj-class="rounded-img" src="/images/r1c1.png" alt="Artwork designed by Mya" href="https://canva.com" width="600px" />
+          <mj-text mj-class="p-txt" font-size="12px" text-transform="uppercase" font-weight="600">
+            Designed by Mya
+          </mj-text>
+        </mj-column>
+        <mj-column>
+          <mj-image mj-class="rounded-img" src="/images/r1c2.png" alt="Artwork designed by Mya" href="https://canva.com" width="600px" />
+          <mj-text mj-class="p-txt" font-size="12px" text-transform="uppercase" font-weight="600">
+            Designed by Camila
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section mj-class="white-bg section-padding" padding-top="0" padding-bottom="10px">
+        <mj-column>
+          <mj-image mj-class="rounded-img" src="/images/r2c1.png" alt="Artwork designed by Mya" href="https://canva.com" width="600px" />
+          <mj-text mj-class="p-txt" font-size="12px" text-transform="uppercase" font-weight="600">
+            Designed by Ahlam
+          </mj-text>
+        </mj-column>
+        <mj-column>
+          <mj-image mj-class="rounded-img" src="/images/r2c2.png" alt="Artwork designed by Mya" href="https://canva.com" width="600px" />
+          <mj-text mj-class="p-txt" font-size="12px" text-transform="uppercase" font-weight="600">
+            Designed by Muhammad Ali
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section mj-class="white-bg section-padding" padding-top="0" padding-bottom="10px">
+        <mj-column>
+          <mj-image mj-class="rounded-img" src="/images/r3c1.png" alt="Artwork designed by Mya" href="https://canva.com" width="600px" />
+          <mj-text mj-class="p-txt" font-size="12px" text-transform="uppercase" font-weight="600">
+            Designed by Akshayaa
+          </mj-text>
+        </mj-column>
+        <mj-column>
+          <mj-image mj-class="rounded-img" src="/images/r3c2.png" alt="Artwork designed by Mya" href="https://canva.com" width="600px" />
+          <mj-text mj-class="p-txt" font-size="12px" text-transform="uppercase" font-weight="600">
+            Designed by Adreiciele
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section mj-class="white-bg section-padding" padding-top="0" padding-bottom="10px">
+        <mj-column>
+          <mj-image mj-class="rounded-img" src="/images/r4c1.png" alt="Artwork designed by Mya" href="https://canva.com" width="600px" />
+          <mj-text mj-class="p-txt" font-size="12px" text-transform="uppercase" font-weight="600">
+            Designed by Purvi
+          </mj-text>
+        </mj-column>
+        <mj-column>
+          <mj-image mj-class="rounded-img" src="/images/r4c2.png" alt="Artwork designed by Mya" href="https://canva.com" width="600px" />
+          <mj-text mj-class="p-txt" font-size="12px" text-transform="uppercase" font-weight="600">
+            Designed by Queila
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section mj-class="white-bg section-padding" padding-top="10px" padding-bottom="10px">
+        <mj-column>
+            <mj-text mj-class="p-txt">
+                Feeling inspired? While sipping on coffee, waiting for a ride, or during a brain break, open up Canva and join our T-shirt Design Challenge.
+            </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section mj-class="white-bg" padding="0 20px 50px" border-radius="0 0 8px 8px">
+        <mj-column>
+          <mj-button mj-class="purple-btn" align="left" target="_blank" href="https://canva.com">
+            Design your T-shirt
+          </mj-button>
         </mj-column>
       </mj-section>
     </mj-wrapper>
