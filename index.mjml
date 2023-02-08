@@ -66,7 +66,7 @@
 		</mj-attributes>
 		<mj-style> * { box-sizing: border-box !important; } </mj-style>
 		<mj-style inline="inline"> </mj-style>
-		<mj-title>Canva</mj-title>
+		<mj-title>Canva | Design a T-shirt Challenge</mj-title>
 	</mj-head>
 	<mj-body background-color="#EDF0F2">
 		<mj-wrapper background-color="transparent">
