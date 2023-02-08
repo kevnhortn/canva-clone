@@ -12,16 +12,17 @@
       <mj-class name="subheading" font-size="24px" font-weight="700" color="#0E1318" letter-spacing="-1px" />
       <mj-class name="p-txt" font-size="14px" font-weight="400" color="#0E1318" line-height="160%" />
       <mj-class name="full-img" width="100%" padding="0" />
-      <mj-class name="underline" text-decoration="underline"/>
-      <mj-class name="num-circle" background-color="#EDF0F2" color="#293039" inner-padding="20px" font-size="14px" font-weight="500"/>
+      <mj-class name="underline" text-decoration="underline" />
+      <mj-class name="num-circle" background-color="#EDF0F2" color="#293039" inner-padding="20px" font-size="14px" font-weight="500" />
       <mj-style inline="inline">
         body {
-        box-sizing: border-box !important;
-        padding: 0 !important;
-        margin: 0 !important;
+          box-sizing: border-box !important;
+          padding: 0 !important;
+          margin: 0 !important;
         }
+
         mj-link:hover {
-            cursor: pointer !important;
+          cursor: pointer !important;
         }
       </mj-style>
     </mj-attributes>
@@ -31,7 +32,7 @@
     <mj-wrapper background-color="transparent">
       <mj-section mj-class="white-bg section-padding" border-radius="8px 8px 0 0" padding-bottom="0">
         <mj-column vertical-align="top">
-          <mj-image src="/images/logo.png" alt="Canva logo" width="100px" align="left" />
+          <mj-image src="/images/logo.png" alt="Canva logo" width="100px" align="left" href="https://canva.com" />
         </mj-column>
         <mj-column vertical-align="top">
           <mj-button mj-class="top-btn" align="right" target="_blank" href="https://canva.com">
@@ -68,7 +69,7 @@
       <mj-section mj-class="white-bg" padding="40px 20px 40px" border-radius="0 0 8px 8px">
         <mj-column>
           <mj-text mj-class="p-txt underline" font-weight="500" color="#0E1318">
-            <mj-link href="https://canva.com" target="_blank" >* Challenge Terms & Conditions</mj-link>
+            <mj-link href="https://canva.com" target="_blank">* Challenge Terms & Conditions</mj-link>
           </mj-text>
         </mj-column>
       </mj-section>
@@ -78,16 +79,51 @@
       </mj-section>
       <mj-section mj-class="white-bg section-padding" border-radius="8px 8px 0 0" padding-bottom="20px">
         <mj-column>
-            <mj-text mj-class="subheading">
-                How do I enter?
-            </mj-text>
+          <mj-text mj-class="subheading">
+            How do I enter?
+          </mj-text>
         </mj-column>
       </mj-section>
-      <mj-section mj-class="section-padding white-bg" padding-top="0">
+      <mj-section mj-class="section-padding white-bg" padding-top="0" padding-bottom="10px">
+        <mj-column width="100px" padding="0" vertical-align="middle">
+          <mj-image src="images/circle-num-1.png" alt="Point 1 of how to enter the T-shirt challenge" width="41px" align="left" padding-right="0" />
+        </mj-column>
+        <mj-column width="460px" padding="0 20px 0 0" vertical-align="middle">
+          <mj-text mj-class="p-txt" padding="0">
+            Design your T-shirt with a Canva template or elements (make sure to design something completely original)
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section mj-class="section-padding white-bg" padding-top="0" padding-bottom="10px">
+        <mj-column width="100px" padding="0" vertical-align="middle">
+          <mj-image src="images/circle-num-2.png" alt="Point 1 of how to enter the T-shirt challenge" width="41px" align="left" padding-right="0" />
+        </mj-column>
+        <mj-column width="460px" padding="0 20px 0 0" vertical-align="middle">
+          <mj-text mj-class="p-txt" padding="0">
+            Share it on Instagram or Twitter and tag <strong>#CanvaDesignChallenge</strong> (we can only view public accounts)
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section mj-class="section-padding white-bg" padding-top="0" padding-bottom="10px">
+        <mj-column width="100px" padding="0" vertical-align="middle">
+          <mj-image src="images/circle-num-3.png" alt="Point 1 of how to enter the T-shirt challenge" width="41px" align="left" padding-right="0" />
+        </mj-column>
+        <mj-column width="460px" padding="0 20px 0 0" vertical-align="middle">
+          <mj-text mj-class="p-txt" padding="0">
+            We'll showcase our favorite designs to the Canva community
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section mj-class="white-bg" padding="0 20px 20px">
         <mj-column>
-            <mj-text>
-                1
-            </mj-text>
+          <mj-button mj-class="purple-btn" align="left" target="_blank" href="https://canva.com">
+            Design your T-shirt
+          </mj-button>
+        </mj-column>
+      </mj-section>
+      <mj-section mj-class="white-bg section-padding" padding-top="0" padding-bottom="50px" border-radius="0 0 8px 8px">
+        <mj-column width="100%">
+            <mj-image src="/images/challenge-capture.png" href="https://canva.com" alt="Screen capture of the T-shirt challenge on Canva.com" width="600px" align="center"/>
         </mj-column>
       </mj-section>
     </mj-wrapper>
