@@ -5,6 +5,7 @@
 			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700;800&display=swap"
 		/>
 		<mj-attributes>
+			<mj-breakpoint width="600px" />
 			<mj-style inline="inline">
 				body { box-sizing: border-box !important; padding: 0 !important; margin:
 				0 !important; } .link { text-decoration: none !important; color: #0E1318
